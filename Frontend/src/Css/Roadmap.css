@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+.Roadmap-page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 1.2rem auto;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Roadmap-page {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.Roadmap-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2rem;
+  position: relative;
+  overflow: hidden; /* Ensure the image doesn't overflow */
+}
+
+.Roadmap-left img {
+  width: 100%;
+  height: 100%; /* Cover the entire height of the parent */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 6px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .Roadmap-left {
+    display: none;
+  }
+}
+
+.Roadmap-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.Roadmap-header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.Roadmap-description {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+.Roadmap-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.Roadmap-buttons button {
+  width: 100%;
+  max-width: 300px;
+  background-color: #0063a5;
+  padding: 0.7rem;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.Roadmap-buttons button:hover {
+  background-color: #004a82;
+}
+
+.Roadmap-dropdown {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1rem;
+}
+
+.Roadmap-dropdown select {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 6px;
+  font-size: 1.1rem;
+}
+
+.Modal-content {
+  padding: 1rem;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 6px;
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.Modal-content img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.Modal-content a {
+  display: block;
+  margin-top: 1rem;
+  color: #0063a5;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
